@@ -462,17 +462,20 @@ body {
 /* responsividade: */
 
 @media (max-width: 768px) {
+  /* Nav: itens lado a lado e com quebra se precisar */
   .menu-compositor {
-    flex-direction: column;
-    gap: 0.5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
     font-size: 1rem;
-    align-items: center;
   }
 
   .nav-compositor {
     padding: 1rem;
   }
 
+  /* Header */
   .header-compositor {
     padding-top: 120px;
     text-align: center;
@@ -491,6 +494,7 @@ body {
     font-size: 1rem;
   }
 
+  /* Sobre */
   .texto-sobre h2 {
     font-size: 1.5rem;
   }
@@ -500,12 +504,14 @@ body {
     font-size: 1rem;
   }
 
+  /* Títulos */
   .titulo-sobre,
   .titulo-composicoes,
   .titulo-contato {
     font-size: 2rem;
   }
 
+  /* Players MP3 */
   .player-compacto {
     flex-direction: column;
     width: 100%;
@@ -513,16 +519,35 @@ body {
     gap: 8px;
   }
 
-  .player-compacto .tempo {
-    justify-content: space-between;
-    width: 100%;
-    font-size: 12px;
-  }
-
   .player-compacto .progress-container {
     width: 100%;
   }
 
+  /* Botão play maior e estilizado */
+  .player-compacto .play-btn {
+    font-size: 28px;
+    color: #000088;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, transform 0.15s ease;
+  }
+
+  .player-compacto .play-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.15);
+  }
+
+  /* Espaçamento e alinhamento do tempo */
+  .player-compacto .tempo {
+    font-size: 12px;
+    min-width: auto;
+    gap: 8px;
+    justify-content: flex-start;
+    width: auto;
+  }
+
+  /* Música destaque */
   .musica-destaque {
     padding: 20px 10px;
     margin: 20px auto;
@@ -532,6 +557,7 @@ body {
     max-width: 80%;
   }
 
+  /* Composições grid */
   .cards-composicoes {
     grid-template-columns: 1fr;
   }
@@ -541,6 +567,7 @@ body {
     text-align: center;
   }
 
+  /* Formulário contato */
   .formulario-contato {
     padding: 1rem;
   }
