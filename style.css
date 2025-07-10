@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --primary: #0a0096;
+  --secondary: #0006a8;
+  --escuro: #0f172a;
+  --maisEscuro: #0a0f1c;
+  --claro: #e2e8f0;
+  --vidro: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-color: var(--escuro);
+  color: var(--claro);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Navegação */
+.nav-compositor {
+  position: fixed;
+  background: rgba(10, 32, 95, 0.8);
+  width: 100%;
+  z-index: 100;
+  padding: 1.5rem;
+  font-size: 20px;
+}
+
+.menu-compositor {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.menu-link-compositor {
+  text-decoration: none;
+  color: var(--claro);
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.menu-link-compositor::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  transition: 0.5s ease;
+}
+
+.menu-link-compositor:hover::after {
+  width: 100%;
+}
+
+/* Header */
+.header-compositor {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.foto-compositor {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: 0 3%;
+  box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+  border-radius: 50%;
+  border: 4px solid var(--vidro);
+  animation: float 4s ease-in-out infinite;
+}
+
+.nome-compositor {
+  font-size: 3.5rem;
+  color: var(--primary);
+  font-weight: bold;
+  margin: 20px;
+}
+
+.subtitulo-compositor {
+  font-size: 1.5rem;
+  color: var(--claro);
+}
+
+/* Sobre */
+.sessao-sobre {
+  padding: 6rem 2rem;
+}
+
+.titulo-sobre {
+  font-size: 3rem;
+  color: var(--claro);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box-sobre {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 16px;
+  border: 1px solid var(--vidro);
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.texto-sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--claro);
+}
+
+.texto-sobre p,
+.texto-sobre li {
+  margin-bottom: 1rem;
+  color: var(--claro);
+  font-size: 1.1rem;
+}
+
+/* Composições */
+.sessao-composicoes {
+  padding: 6rem 2rem;
+}
+
+.cards-mp3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+  padding: 20px 0;
+}
+
+.titulo-composicoes {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.cards-composicoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-composicao {
+  background: rgba(42, 40, 189, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--vidro);
+  overflow: hidden;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.card-composicao:hover {
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+  transform: translateY(-10px) scale(1.07);
+}
+
+.img-composicao {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.conteudo-card {
+  padding: 1.2rem;
+}
+
+.titulo-card {
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+  color: var(--claro);
+}
+
+.descricao-card {
+  color: rgba(226, 232, 240, 0.8);
+  line-height: 1.25rem;
+}
+
+/* Contato */
+.sessao-contato {
+  padding: 6rem 2rem;
+}
+
+.titulo-contato {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.formulario-contato {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(2, 0, 120, 0.05);
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+  border: 1px solid var(--vidro);
+  border-radius: 16px;
+  color: var(--claro);
+}
+
+.campo-form {
+  margin-bottom: 1.5rem;
+}
+
+.input-form {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--vidro);
+  border-radius: 8px;
+  color: var(--claro);
+  outline: none;
+}
+
+.botao-form {
+  color: var(--claro);
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+}
+
+.botao-form:hover {
+  box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+  transform: translateY(-4px);
+}
+
+/* Switch */
+.compositor-switch-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap: 1rem;
+}
+
+.switch-label {
+  color: var(--claro);
+  font-size: 1rem;
+}
+
+
+/* abaico estilos para o mp3 */
+
+.player-compacto {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  background: #080654;
+  border-radius: 12px;
+  padding: 10px 15px;
+  gap: 15px;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  user-select: none;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.7);
+}
+
+.player-compacto audio {
+  display: none;
+  /* esconde player padrão */
+}
+
+.player-compacto .play-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #0000aa;
+  /* azul */
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.player-compacto .play-btn:hover {
+  transform: scale(1.1);
+}
+
+.player-compacto .progress-container {
+  flex: 1;
+}
+
+.player-compacto .progress {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: #282828;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Chrome, Safari, Edge */
+.player-compacto .progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: #0000aa;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -4px;
+  box-shadow: 0 0 6px #0000aa;
+  transition: background 0.2s ease;
+}
+
+/* Firefox */
+.player-compacto .progress::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: #0000aa;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 6px #0000aa;
+  transition: background 0.2s ease;
+}
+
+/* Firefox track */
+.player-compacto .progress::-moz-range-track {
+  background: #282828;
+  border-radius: 3px;
+  height: 6px;
+}
+
+.player-compacto .time {
+  font-size: 12px;
+  min-width: 40px;
+  text-align: right;
+  color: #b3b3b3;
+}
+
+/* teste */
+
+.musica-destaque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #010130;
+  border-radius: 16px;
+  padding: 30px 20px;
+  margin: 40px auto;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  text-align: center;
+  color: white;
+}
+
+
+.capa-destaque {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.titulo-destaque {
+  font-size: 24px;
+  color: #0707c1;
+  margin-bottom: 5px;
+}
+
+.subtexto-destaque {
+  font-size: 14px;
+  color: #cccccc;
+  margin-bottom: 10px;
+}
+
+.frase-musica {
+  font-size: 13px;
+  font-style: italic;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+/* Reaproveita tags e player já existentes */
+
+.player-compacto .tempo {
+  font-size: 12px;
+  min-width: 80px;
+  text-align: right;
+  color: #b3b3b3;
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+}

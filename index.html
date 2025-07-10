@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre Nunes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="efeito-particulas"></div>
+
+    <nav class="nav-compositor">
+        <ul class="menu-compositor">
+            <li><a href="#inicio" class="menu-link-compositor">Início</a></li>
+            <li><a href="#sobre" class="menu-link-compositor">Sobre</a></li>
+            <li><a href="#efeito-borboleta" class="menu-link-compositor">Efeito Borboleta</a></li>
+            <li><a href="#composicoes" class="menu-link-compositor">Composições</a></li>
+            <li><a href="#contato" class="menu-link-compositor">Contato</a></li>
+        </ul>
+
+
+    </nav>
+
+    <main id="inicio" class="header-compositor">
+        <img src="./img/1.jpg" alt="Foto do compositor" class="foto-compositor">
+        <h1 class="nome-compositor">Xandy Nunes</h1>
+        <p class="subtitulo-compositor">Compositor</p>
+    </main>
+
+    <section id="sobre" class="sessao-sobre">
+        <h2 class="titulo-sobre">Sobre mim</h2>
+        <div class="box-sobre">
+            <div class="texto-sobre">
+                <h2>Como penso, trabalho e entrego valor através da música</h2>
+                <p>Acredito que compor vai muito além de escrever versos e melodias. Envolve entender sentimentos reais,
+                    traduzir histórias em som e criar músicas que toquem quem ouve — de verdade.</p>
+                <p>Meu foco está em letras com identidade, melodias que ficam na cabeça e arranjos que valorizem a
+                    emoção da canção, sempre com atenção à originalidade, harmonia e impacto.</p>
+                <p>Sempre que encaro uma composição — seja autoral ou em parceria — busco responder perguntas como:</p>
+                <ul>
+                    <li>O que essa música está querendo dizer?</li>
+                    <li>Como posso tornar essa mensagem mais clara e poderosa?</li>
+                    <li>Se eu fosse o ouvinte, essa música me emocionaria?</li>
+                </ul>
+                <p>Sou movido pelo desafio de transformar experiências em canções. Gosto de criar algo que conecte,
+                    inspire ou simplesmente faça alguém se sentir compreendido.</p>
+                <p>Estou pronto para transformar histórias em música. E quando surgirem as oportunidades com intérpretes
+                    ou projetos, meu objetivo será entregar não apenas letras — mas emoções reais.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="musica-destaque" id="efeito-borboleta">
+
+        <img src="/img/capaborb.png" alt="Capa Efeito Borboleta" class="capa-destaque" />
+
+        <div class="conteudo-destaque">
+            <h2 class="titulo-destaque">🎧 Efeito Borboleta</h2>
+            <p class="subtexto-destaque">A canção que marcou o início de tudo</p>
+            <p class="frase-musica">"Por mais que você nao acredite, o efeito borboleta é real."</p>
+
+            <div class="player-compacto">
+                <audio src="musicas/efeitoborboleta.mp3"></audio>
+                <button class="play-btn" aria-label="Play/Pause">▶</button>
+                <div class="progress-container">
+                    <input type="range" class="progress" value="0" min="0" max="100" step="0.1" />
+                </div>
+                <span class="tempo">
+                    <span class="tempo-atual">00:00</span> / <span class="tempo-total">00:00</span>
+                </span>
+            </div>
+
+            <div class="tags-musica">
+                <span class="tag">Romântica</span>
+                <span class="tag">Reflexiva</span>
+                <span class="tag">2019</span>
+            </div>
+        </div>
+    </section>
+
+   <section id="composicoes" class="sessao-composicoes">
+  <h2 class="titulo-composicoes">Demais composições</h2>
+  <div class="cards-mp3">
+
+    <h3 class="titulo-musica">Dia Cinza</h3>
+    <div class="player-compacto">
+      <audio src="musicas/diacinza.mp3"></audio>
+      <button class="play-btn" aria-label="Play/Pause">▶</button>
+      <div class="progress-container">
+        <input type="range" class="progress" value="0" min="0" max="100" step="0.1" />
+      </div>
+      <span class="tempo">
+        <span class="tempo-atual">00:00</span> / <span class="tempo-total">00:00</span>
+      </span>
+    </div>
+
+    <h3 class="titulo-musica">Conceitos</h3>
+    <div class="player-compacto">
+      <audio src="musicas/conceitos.mp3"></audio>
+      <button class="play-btn" aria-label="Play/Pause">▶</button>
+      <div class="progress-container">
+        <input type="range" class="progress" value="0" min="0" max="100" step="0.1" />
+      </div>
+      <span class="tempo">
+        <span class="tempo-atual">00:00</span> / <span class="tempo-total">00:00</span>
+      </span>
+    </div>
+
+    <h3 class="titulo-musica">Máquina do Tempo</h3>
+    <div class="player-compacto">
+      <audio src="musicas/maquinadotempo.mp3"></audio>
+      <button class="play-btn" aria-label="Play/Pause">▶</button>
+      <div class="progress-container">
+        <input type="range" class="progress" value="0" min="0" max="100" step="0.1" />
+      </div>
+      <span class="tempo">
+        <span class="tempo-atual">00:00</span> / <span class="tempo-total">00:00</span>
+      </span>
+    </div>
+
+    <h3 class="titulo-musica">Primeiro Amor</h3>
+    <div class="player-compacto">
+      <audio src="musicas/primeiroamor.mp3"></audio>
+      <button class="play-btn" aria-label="Play/Pause">▶</button>
+      <div class="progress-container">
+        <input type="range" class="progress" value="0" min="0" max="100" step="0.1" />
+      </div>
+      <span class="tempo">
+        <span class="tempo-atual">00:00</span> / <span class="tempo-total">00:00</span>
+      </span>
+    </div>
+
+    <h3 class="titulo-musica">Amor Bipolar</h3>
+    <div class="player-compacto">
+      <audio src="musicas/amorbipolar.mp3"></audio>
+      <button class="play-btn" aria-label="Play/Pause">▶</button>
+      <div class="progress-container">
+        <input type="range" class="progress" value="0" min="0" max="100" step="0.1" />
+      </div>
+      <span class="tempo">
+        <span class="tempo-atual">00:00</span> / <span class="tempo-total">00:00</span>
+      </span>
+    </div>
+
+  </div>
+</section>
+
+    <section id="contato" class="sessao-contato">
+        <h2 class="titulo-contato">Entre em contato</h2>
+        <form class="formulario-contato" id="form" onsubmit="enviarWhats(event)">
+            <div class="campo-form">
+                <input placeholder="Nome" class="input-form" id="namep">
+            </div>
+            <div class="campo-form">
+                <textarea class="input-form" placeholder="Digite sua Mensagem" id="mensagem" rows="4"></textarea>
+                <button type="submit" class="botao-form">Enviar Whatsapp</button>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

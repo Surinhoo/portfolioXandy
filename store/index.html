@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SC Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+
+        <script src="store.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="title-bussines-sc">S.C</div>
+        <div class="title-bussines">Store</div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Produtos</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="for-circles">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+
+        <div class="list-items">
+            <div class="item active">
+                <div class="item-img">
+                    <img src="../img/apple-watch.png" alt="Apple Watch">
+                </div>
+
+                <div class="content">
+                    <p class="item-title">Novo lançamento</p>
+                    <p class="item-name">Apple Watch Series 10</p>
+                    <p class="item-description">O Smartwatch mais avançado da atualidade. monitore sua saúde de
+                        forma completa, conte com GPS integrado, tela AMOLED de alta resolução e bateria de longa
+                        duração. tecnologia de ponta para acompanhar cada passo do seu estilo de vida ativo — com
+                        performance, elegância e praticidade.</p>
+                    <button class="btn">Saiba mais</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="../img/air-pods.png" alt="Air Pods">
+                </div>
+
+                <div class="content">
+                    <p class="item-title">Som Premium</p>
+                    <p class="item-name">Air Pods Max</p>
+                    <p class="item-description">Com cancelamento de ruído adaptativo, áudio de alta fidelidade e
+                        design ergonômico, você ouve cada detalhe com conforto total.
+                        Sua música como ela deve ser — imersiva, nítida e sem distrações.</p>
+                    <button class="btn">Saiba mais</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="../img/vision-pro.png" alt="Vision Pro">
+                </div>
+
+                <div class="content">
+                    <p class="item-title">Alta performance</p>
+                    <p class="item-name">Vision Pro</p>
+                    <p class="item-description">Experiência imersiva em realidade aumentada e virtual, qualidade
+                        visual impressionante, som espacial envolvente e controle intuitivo com seus olhos, mãos e
+                        voz.
+                        É mais que tecnologia — é uma nova forma de ver, trabalhar e se conectar com o mundo.</p>
+                    <button class="btn">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows">
+            <button class="arrow-btn" id="prev"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="#fff" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                </svg></button>
+            <button class="arrow-btn" id="next"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="#fff" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                </svg></button>
+        </div>
+        <div class="indicators">
+            <div class="numbers">01</div>
+            <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
