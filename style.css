@@ -391,7 +391,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #010130;
+  background: #181453;
   border-radius: 16px;
   padding: 30px 20px;
   margin: 40px auto;
@@ -442,4 +442,19 @@ body {
   display: flex;
   justify-content: flex-end;
   gap: 4px;
+}
+
+
+/*  */
+
+.blur-azul {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(1, 5, 96, 0.25); /* azul translúcido */
+  backdrop-filter: blur(1px);         /* desfoque do fundo */
+  -webkit-backdrop-filter: blur(15px); /* compatibilidade com Safari */
+  z-index: -1;
+  pointer-events: none; /* não bloqueia cliques */
 }
