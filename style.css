@@ -534,7 +534,7 @@ body {
   }
 
   .player-compacto .play-btn:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #080654;
     transform: scale(1.15);
   }
 
