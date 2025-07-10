@@ -463,6 +463,13 @@ body {
 
 @media (max-width: 768px) {
   /* Nav: itens lado a lado e com quebra se precisar */
+
+  .conteudo-destaque{
+
+
+  }
+
+
   .menu-compositor {
     flex-direction: row;
     flex-wrap: wrap;
@@ -576,4 +583,18 @@ body {
   .tags-musica{
     visibility: hidden;
   }
+
+  .musica-destaque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #181453;
+  border-radius: 16px;
+  padding: 30px 20px;
+  margin: 40px auto;
+  max-width: 350px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  text-align: center;
+  color: white;
+}
 }
