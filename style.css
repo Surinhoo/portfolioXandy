@@ -458,3 +458,90 @@ body {
   z-index: -1;
   pointer-events: none; /* não bloqueia cliques */
 }
+
+/* responsividade: */
+
+@media (max-width: 768px) {
+  .menu-compositor {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1rem;
+    align-items: center;
+  }
+
+  .nav-compositor {
+    padding: 1rem;
+  }
+
+  .header-compositor {
+    padding-top: 120px;
+    text-align: center;
+  }
+
+  .foto-compositor {
+    width: 200px;
+    height: 200px;
+  }
+
+  .nome-compositor {
+    font-size: 2rem;
+  }
+
+  .subtitulo-compositor {
+    font-size: 1rem;
+  }
+
+  .texto-sobre h2 {
+    font-size: 1.5rem;
+  }
+
+  .texto-sobre p,
+  .texto-sobre li {
+    font-size: 1rem;
+  }
+
+  .titulo-sobre,
+  .titulo-composicoes,
+  .titulo-contato {
+    font-size: 2rem;
+  }
+
+  .player-compacto {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .player-compacto .tempo {
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .player-compacto .progress-container {
+    width: 100%;
+  }
+
+  .musica-destaque {
+    padding: 20px 10px;
+    margin: 20px auto;
+  }
+
+  .capa-destaque {
+    max-width: 80%;
+  }
+
+  .cards-composicoes {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-mp3 > h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .formulario-contato {
+    padding: 1rem;
+  }
+}
