@@ -570,5 +570,10 @@ body {
   /* Formulário contato */
   .formulario-contato {
     padding: 1rem;
+  
+  }
+
+  .tags-musica{
+    visibility: hidden;
   }
 }
