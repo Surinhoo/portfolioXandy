@@ -37,6 +37,21 @@ body {
 
 /*  */
 
+.mask2 {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    rgba(10, 12, 16, 0.95) 0%,
+    rgba(10, 12, 16, 0) 20%,
+    rgba(10, 12, 16, 0) 80%,
+    rgba(10, 12, 16, 0.95) 100%
+  );
+  z-index: 5;
+  pointer-events: none; /* permite clicar nos elementos atrás */
+}
 
 
 
