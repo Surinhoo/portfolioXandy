@@ -464,11 +464,7 @@ body {
 @media (max-width: 768px) {
   /* Nav: itens lado a lado e com quebra se precisar */
 
-  .conteudo-destaque{
-
-
-  }
-
+  
 
   .menu-compositor {
     flex-direction: row;
